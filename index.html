@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Horner Bible Reading Plan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Grant Horner Bible Reading Plan</h1>
+    <div class="header-buttons">
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+      <!-- Text Size Adjustment -->
+      <button id="decreaseTextSize">A-</button>
+      <button id="increaseTextSize">A+</button>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <!-- Left Column: Reading Plan Buttons -->
+    <div class="reading-plan" id="reading-plan">
+        <p>Click a chapter to mark it as read. Click again to confirm progressing the chapter forward.</p>
+   
+        <!-- Progress All Chapters Button -->
+        <button id="progressAllChaptersButton" onclick="progressAllChapters()">Progress All Chapters</button>
+      </div>
+      
+
+    <!-- Right Column: Scripture Display -->
+    <div class="scripture-display" id="scripture-display">
+      <h2>Selected Scripture</h2>
+      <p id="scripture-text" style="font-size: 16px;">Click on a chapter to display the scripture here.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
